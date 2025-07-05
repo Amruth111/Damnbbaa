@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAMN BBA - Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #2f5249;
+      --bg-mid: #4d735c;
+      --bg-light: #9bb463;
+      --bg-accent: #e6dd63;
+      --text-light: #f4f4f4;
+      --text-muted: #cfcfcf;
+      --shadow: rgba(0, 0, 0, 0.4);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    body {
+      color: var(--text-light);
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: all 0.3s ease;
+      perspective: 1000px;
+      height: 100vh;
+      overflow-y: scroll;
+      background: url('https://i.ibb.co/TxLS9Yt4/208b5649-7516-4d99-b522-3c00ab001169.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      animation: fadeInUp 1.8s ease-out forwards;
+      opacity: 0;
+    }
+
+    header h1 {
+      font-family: 'Instrument Serif', serif;
+      font-size: 2rem;
+      color: white;
+      letter-spacing: 1px;
+      animation: pulseGlow 3s ease-in-out infinite;
+    }
+
+    @keyframes pulseGlow {
+      0% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.8; }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      font-weight: bold;
+      background: rgba(63, 107, 83, 0.8);
+      animation: fadeInUp 2s ease-out forwards;
+      opacity: 0;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--bg-accent);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+      background-color: rgba(47, 82, 73, 0.8);
+      border-radius: 12px;
+      animation: fadeInUp 1.5s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .hero h2 {
+      font-family: 'Instrument Serif', serif;
+      font-size: 2.5rem;
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 6px 15px var(--shadow);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05) rotate(-1deg);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text-muted);
+      background: rgba(77, 115, 92, 0.8);
+      animation: fadeInUp 1.5s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: var(--bg-accent);
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7a37ff545b.mp3?filename=calm-relaxing-background-110997.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <header>
+    <h1 style="font-family: 'Instrument Serif', serif;">DAMN BBA</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <h2>Namaskaaram and Welcome!</h2>
+    <p>I’m truly glad you’re here.<br><br>
+    This website is more than just a portfolio — it’s a canvas of my BBA journey, painted with the experiences, lessons, and passions I’ve gathered over these past three years.<br><br>
+    From academic projects and real-world case studies, to the little creative moments between deadlines — everything here reflects my mindset as a business student who believes in not just growth, but graceful growth.</p>
+  </section>
+
+  <section id="gallery">
+    <h2 style="font-family: 'Instrument Serif', serif; font-size: 2rem;">Gallery</h2>
+    <div class="gallery">
+      <img src="https://i.ibb.co/x8KSbmhR/Picsart-25-07-05-03-14-01-732.jpg" alt="Picsart-25-07-05-03-14-01-732">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DAMN BBA. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/damnn.bba?igsh=MXdpNDd2ZHV3aXNibA==" target="_blank">Instagram</a>
+      <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
